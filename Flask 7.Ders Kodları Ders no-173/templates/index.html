@@ -1,0 +1,31 @@
+﻿<html>
+
+   <head>
+
+	<title>	 HTML CHEAT SHEET </title>
+
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='renk.css') }}" >
+
+	<script type="text/javascript" src= "{{ url_for('static', filename='show_date.js') }}"></script>
+
+   </head>
+
+   <body>
+
+	<img src="{{ url_for('static', filename='html.png') }}" width=250 height=350 align="left">
+
+	<h2 class=red>HTML, web sayfaları hazırlamak için kullanılan bir etiket dilidir. </h2>
+
+	{% for sayfa in sayfalar %}
+
+		<h2 class=blue><a href="{{ url_for(sayfa[0]) }}"> {{ sayfa[1] }} etiketleri için tıklayın</a></h2>
+
+	{% endfor %}
+
+	<h3 class=black>pdf dosyasına erişmek için <a href= "{{ url_for('static', filename='html_tags.pdf') }}">tıklayın</a></h3>
+
+	<input type="button" onclick="show_date()" value="Bugün?" />	
+
+  <body>
+
+</html>

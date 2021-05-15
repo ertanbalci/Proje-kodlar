@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html>
+      <head> <script src="https://www.google.com/recaptcha/api.js" async defer></script>  </head>
+
+      <body> <form action="{{ url_for('login') }}"  method="POST">
+	
+		{{ form.csrf_token }}
+
+	<table  border=".5" bgcolor="#FDFEFE" bordercolor="#EBE6F1" cellspacing="5" cellpadding="10">
+
+		<tr> 	<td colspan="2" align="center"> <b> <font color="red">YENİ KAYIT FORMU </b></h3></td> </tr>
+
+		<tr> 	<td>	{{ form.adi.label }}<br>{{ form.adi(size=32) }}
+	
+		  		{% for error in form.adi.errors %}
+        
+     					<br><font color="red">{{ error }}</font>
+
+		  		{% endfor %}
+               	  	</td>
+			
+			<td>	{{ form.s_adı.label }}<br>{{ form.s_adı(size=32) }} </td>
+		</tr>
+                
+		<tr> 	<td>	{{ form.yas.label }}<br>{{ form.yas(size=20)  }}
+		
+                	   	{% for error in form.yas.errors %}
+        	
+          				<br><font color="red">{{ error }}</font>
+	
+        		 	{% endfor %}
+
+			</td>
+
+			<td>	{{ form.cns.label }} {{ form.cns }} </td>
+		</tr>
+
+		<tr>	<td>	{{ form.egitim.label(size=92) }}<br>{{ form.egitim }} </td>
+
+		        <td>   	{{ form.mt.label }}<br>{{ form.mt }} </td>
+		</tr>
+
+		<tr>	<td>   	{{ form.eposta.label }}<br>{{ form.eposta }}
+
+  			  	{% for error in form.eposta.errors %}
+
+   					<br><font color="red">{{ error }}</font>
+
+  		    		{% endfor %}
+
+           		</td>
+
+			<td>    {{ form.adres.label }}<br>{{ form.adres }} </td>
+		</tr>
+
+		<tr>    <td>   	{{ form.parola.label }}<br>{{ form.parola }}
+		
+                 		{% for error in form.parola.errors %}
+        	
+                			<br><font color="red">{{ error }}</font>
+	
+   		  		{% endfor %}
+			</td>
+		
+		 	<td>	{{ form.cparola.label }}<br>{{ form.cparola }}
+	
+				{% for error in form.cparola.errors %}
+
+	        			<br><font color="red">{{ error }}</font>
+
+	     		        {% endfor %}
+
+	    		</td>    
+		</tr>
+
+		<tr> 	<td colspan="2"> {{ form.kvk }}{{ form.kvk.label }} </td> </tr>
+
+		<tr> 	<td colspan="2" align="center">
+
+                            <div class="g-recaptcha" data-sitekey="6Lef22AaAAAAAGj50R3Y8M30a0JC_lltBWb6er-F"></div>
+
+                     	</td> 
+		</tr>
+	        
+		<tr> 	<td colspan="2" align="center"> {{ form.submit }} </td> </tr>
+	</table>	
+     </form>
+   </body>
+</html>

@@ -1,0 +1,15 @@
+﻿<html>
+<head> <title>Resimler</title> </head>
+<body>
+
+{% if images %}
+
+{% for image in images %}
+
+<img width="250px" height="150px" src="{{ url_for('static', filename='uploaded_images/'+ image) }}" />
+
+{% endfor %}
+{% endif %}
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+web sayfasýna tablo ekleme
+<table>...</table>tablo etiketi
+<table border="3">...</table> border tablo çerçeve kalýnlýðýný belirtir. 
+border="0" tablo çizgisi yok demek
+<tr>...</tr> Tabloda satýr oluþturur.
+<td>...</td> Tabloda sütun oluþturur.
+<tablo bgcolor="blue"> <tablo>, <tr> veya <td> etiketleri içinde kullanýlan bgcolor arka plan rengini ayarlar.
+<tablo width="100" height="100"> width / hight pixel olarak tablo yüksekliðini ve geniþliðini ayarlar.
+<td width="100" height="100"> width / hight pixel olarak hücre yüksekliðini ve geniþliðini ayarlar.

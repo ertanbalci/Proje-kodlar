@@ -1,0 +1,21 @@
+﻿<!doctype html>
+
+<html>
+
+<body>
+
+{# name ve year view fonksiyonundan gelecek #}
+
+{% if (2021-year) > 18 %}
+
+<h2>Merhaba {{ name }}. Hoşgeldin.</h2>
+
+{% else %}
+
+<h1>Giremezsiniz.</h1>
+
+{% endif %}
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+﻿
+ <html>
+
+    <head> <title>Flash Mesaj</title> </head>
+
+    <body> 
+
+	{% for message in get_flashed_messages() %}
+
+		<h2> {{ message }}</h2>
+
+	{% endfor %}
+
+	<h2>PAGE2'ye gitmek için <a href="{{ url_for('page2') }}">tıklayın</a></h2>
+
+    </body>
+
+ </html>    

@@ -1,0 +1,20 @@
+﻿
+<html>
+
+  <head> <title>HTML CHEAT SHEET</title> </head>
+
+  <body>
+
+	<img src="{{ url_for('static', filename='html.png') }}" width=250 height=350 align="left">
+
+	<h2><font color="blue">Hoşgeldiniz {{ user }} </font></h2>
+
+	<h2>pdf dosyasına erişmek için <a href="{{ url_for('static', 
+                
+                                                  filename='html_tags.pdf') }}">tıklayın</a></h2>
+
+	<h2>Oturumu sonlandırmak için <a href="{{ url_for('logout') }}">tıklayın</a></h2>
+
+  </body>
+
+</html> 

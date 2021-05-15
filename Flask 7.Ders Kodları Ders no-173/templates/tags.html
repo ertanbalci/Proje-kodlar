@@ -1,0 +1,32 @@
+﻿<html>
+
+   <head>
+
+	<title> HTML CHEATSHEET </title>
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='renk.css') }}">
+
+   </head>
+
+   <body>
+
+	<h2 class=red> {{ dosya[0] }} </h2>
+
+
+	<ul>
+
+	{% for item in dosya[1:] %}
+
+		<li><h3 class=blue>{{ item }}</h3></li>
+
+	{% endfor %}
+
+	</ul>
+
+	<h2>Ana sayfaya dönmek için <a href ="{{ url_for('index') }}">tıklayın</a></h2>
+
+	{% include "dip_not.html" %}
+
+   </body>
+
+</html>

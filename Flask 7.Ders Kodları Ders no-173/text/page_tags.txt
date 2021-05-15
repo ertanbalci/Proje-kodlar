@@ -1,0 +1,10 @@
+HTML komutlarý tag denilen <etiketadý> .... </etiketadý> etiketler arasýna yazýlýr.
+<etiketadý> ilgili etiketin baþladýðýný belirtir.
+</etiketadý> ilgili etiketin sona erdiðini belirtir.
+<html>...</html> HTML kodlarýnýn yazýmýna baþlandý / bitti.
+<head>...</head> Web sayfasýna iliþkin sayfanýn baþlýðý, yazarý, anahtar sözcükler gibi bilgiler (meta Etiketler) yerleþtirilir. 
+<title>...</title> Tarayýcý baþlýðýný düzenlemek için kullanýlýr. <head></head> etiketleri içindedir.
+<body>...</body> Tarayýcda görünecek her þey bu bölüme yerleþtirilir.
+<ul>...</ul> Sýra numarasýz (madde iþareti ile) liste oluþturur.
+<ol>...</ol> Sýra numaralý liste oluþturur.
+<li>...</li> Liste elemanlarý etiketi. <ul> ve <ol> liste elemanlarý bu etiket içine yazýlýr.

@@ -1,0 +1,39 @@
+﻿<html>
+
+<head><title>Kayıt Formu</title>
+
+<h2><font color="red">Yeni Kayıt Formu</font></h2></head>
+
+<body>
+
+<form action="{{ url_for('kayitKontrol') }}" method="post">
+
+<h3><p>Kullanıcı Adı <INPUT TYPE="text" NAME="username"></p>
+
+<p>E-Posta Adresi <INPUT TYPE="text" NAME="mail"></p>
+
+<p><input type="radio" name="cins" value="Erkek" checked="on"> Erkek
+
+<input type="radio" name="cins" value="Kadın"> Kadın</p>
+
+<p>İlgi alanınız:</p>
+
+<input type="checkbox" name="sw" checked="on"> Yazılım<br> 
+
+<input type="checkbox" name="hw"> Donanım<br> 
+
+<input type="checkbox" name="oto"> Otomasyon<br> 
+
+<p>Parola <INPUT TYPE="password" NAME="parola"></p>
+
+<p><input type="submit" value="Gönder">
+
+<input type="reset" value="Temizle"></p>
+
+<p>Ana Sayfaya dönmek için <a href="{{ url_for('index') }}">tıklayın</a></p></h3>
+
+</form>
+
+</body>
+
+</html>

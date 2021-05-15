@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html>
+      <head>   </head>
+
+      <body> 
+
+	<form action=""  method="POST">
+	
+		{{ form.csrf_token }}
+
+		<h2> <font color="blue">E-posta adresinize doğrulama şifresi gönderildi.<br>
+                                       Doğrulama şifresini aşağıdaki kutuya girin ve gönderin: </font></h2>
+
+		
+
+		{{ form.kod.label }}<br>{{ form.kod }}
+
+
+		{{ form.submit }} 
+
+	</form>
+
+	{% for message in get_flashed_messages() %}
+
+		<h2> <font color={{renk }} >{{ message }} </font></h2>
+
+	{% endfor %}
+
+
+
+   </body>
+</html>

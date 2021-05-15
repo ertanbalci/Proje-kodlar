@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html>
+      <head>   </head>
+
+      <body> 
+
+	<form action=""  method="POST">
+	
+		{{ form.csrf_token }}
+
+		<h2> <font color="red">LOGIN PAGE </font></h2>
+		<h4> <font color="blue">Lütfen bir resim seçin</font><br>
+		{% for image in images %}
+			<img src="{{ url_for('static', filename='images/'+ image) }}" 
+                             width="125" height="90" title= {{ image }}   />
+		{% endfor %}
+		
+		<br><br>
+		
+		{{ form.img.label }} {{ form.img }}
+	
+		
+
+		<br><br>
+		<font color="blue">
+
+		{{ form.eposta.label }}<br>{{ form.eposta }}
+
+	  	{% for error in form.eposta.errors %}
+
+			<br><font color="red">{{ error }}</font>
+
+    		{% endfor %}
+
+		
+	
+		<br><br>
+
+		{{ form.submit }} </h4>
+
+	</form>
+
+	
+
+   </body>
+</html>

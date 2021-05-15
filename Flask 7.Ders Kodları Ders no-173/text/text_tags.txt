@@ -1,0 +1,12 @@
+Metin düzenleme etiketleri
+<hx>...</hx> Baþlýk ekleme etiketidir. x=1...6
+<h1>...</h1> En büyük baþlýk
+<h6>...</h6> En küçük baþlýk
+<h3 align="center">...</h3> Yazýyý h3 boyutunda yaz ve ortala. align="center"/"left"/"right"/"justify"
+<b>...</b> Etiket içindeki ifadeyi koyu yaz.
+<u>...</u> Etiket içindeki ifadeyi altý çizili yaz.
+<p>...</p> Paragraf oluþturur. (bir satýr boþluk býrakýr ve satýr baþýndan devamn eder).
+<font>...</font>Ýçeridiði ifadenin yazý tipi, boyut ve renk özelliklerini ayarlar.
+<font size=6 color="red" face="Arial">
+<br> yeni satýr etiketi. Bu etiketin kapanýþ etiketi yoktur.
+

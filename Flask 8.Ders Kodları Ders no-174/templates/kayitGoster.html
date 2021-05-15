@@ -1,0 +1,22 @@
+﻿
+<html>
+
+<head>
+
+<title>Kayıt Kontrol</title>
+
+<h2><font color="red">Kayıt Kontrol</font></h2></head>
+
+</head>
+
+<body>
+
+{% for k, v in basvuru.items() %}
+
+	<p>{{ k }} : {{ v }}</p>
+
+{% endfor %}
+
+<h4>Ana sayfaya dönmek için <a href="{{ url_for('index') }}">tıklayın</a></h3>
+
+</body></html>   

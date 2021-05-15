@@ -1,0 +1,23 @@
+﻿<html>
+ <head> <title>Dosya Yükleme</title> </head>
+ <body>
+    <img src="{{ url_for('static', filename='intro.png') }}" width=450 height=350>
+
+    <br> <h2> <font color="blue"> {{ info }} </font></h2> <br>
+
+    <form action="{{ url_for('file_upload') }}" method="post" enctype="multipart/form-data">
+
+              Yüklemek için <input type="file" name="imaj">  
+
+                        <input type="submit" value="Gönder"> 
+    </form>
+    
+    {% for message in get_flashed_messages() %}
+	
+        <h2> <font color="red"> {{ message }} </font></h2>
+
+    {% endfor %}
+
+    <p>Yüklenmiş imajları görmek için <a href="{{ url_for('show_images') }}">tıklayın</a></p>
+ </body>
+</html>

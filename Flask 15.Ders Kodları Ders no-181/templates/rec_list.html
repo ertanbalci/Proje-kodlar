@@ -1,0 +1,34 @@
+﻿
+<html>
+
+   <head>  <title>Başvuru Listesi</title>
+
+           <h2><font color="red">BAŞVURANLAR LİSTESİ</font></h2></head>
+
+   </head>
+
+   <body>
+	<table border=1>
+ 	  <thead>
+
+	      <td>ADI</td><td>SOYADI</td><td>CNS</td><td>YAŞ</td><td>EĞİTİM</td><td>E-POSTA</td>
+
+	  </thead>
+
+          {% for kyt in kayıt_listesi %}
+	
+              <tr>
+	          <td>{{ kyt[0] }}</td><td>{{ kyt[1] }}</td><td>{{ kyt[2] }}</td>
+
+                  <td>{{ kyt[3] }} </td><td>{{ kyt[4] }}</td><td>{{ kyt[5]}}</td>
+ 	      </tr>
+
+          {% endfor %}
+
+        </table>
+
+        <h4>Ana sayfaya dönmek için <a href="{{ url_for('index') }}">tıklayın</a></h3>
+
+   </body>
+ 
+</html>   

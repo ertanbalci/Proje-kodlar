@@ -1,0 +1,39 @@
+Form Etiketleri
+FORM
+<form>...</form> html formu oluþturur.
+<form action="url adresi" method="GET/POST">...</form> action formun gönderileceði url adresi
+<form action="url adresi" method="GET/POST">...</form> method formýn gönderilme yöntemi get veya post
+
+TEXTBOX
+<input type="text" name="isim" size="25" max_length="22">25 karakter büyüklüðünde en çok 22 karakter alan textbox 
+<input type="password" name="parola" max_length="10">En çok 10 karakter yazýlabilen password kutucuðu
+
+RADYO DÜÐMESÝ
+<input type="radio" name="dil" value="1" checked="on">Python<br> Python radyo düðmesi
+<input type="radio" name="dil" value="2">Java<br> Java radyo düðmesi
+<input type="radio" name="dil" value="3">C#<br> C# radyo düðmesi
+
+CHECKBOX
+<input type="checkbox" name="pyt" checked="on">Python<br> Python checkbox
+<input type="checkbox" name="jv">Java<br> Java checkbox
+<input type="checkbox" name="cs">Java<br> C# checkbox
+
+TEXTAREA
+<textarea name="mesaj" rows="3" cols="50"></textarea>3 satýr 50 karakterlik text kutusu
+
+LISTBOX
+<form>
+Doðum yýlýnýz<br>
+<select name="dyil" size=3>
+<option>2000</option>
+<option>2001</option>
+<option>2002</option>
+<option>2003</option>
+<option>2004</option>
+</select>
+</form>
+
+SUBMIT
+<input type="submit" value="Onay">Formda doldurulan kutularýn içerikleri onaylama butonu. Formu sunucuya gönderir. 
+RESET
+<input type="reset" value="Temizle">Formda doldurulan kutularýn içeriklerini temizleme butonu.

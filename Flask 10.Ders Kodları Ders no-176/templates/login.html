@@ -1,0 +1,37 @@
+﻿<html>
+
+ <head> <title>Login</title>
+
+	<h1><font color="blue">Giriş Sayfası</font></h1>
+
+        <style> .alert {padding: 10px; background-color: yellow; color: blue;} </style>
+
+ </head>
+
+ <body>
+	{%  if error %}
+			<h2><font color="red">{{ error }}</font></h2>
+	{%  endif %}
+
+        <form action="" method="POST">
+
+	    <h2>
+		<p>Kullanıcı Adı <INPUT TYPE="text" NAME="user"></p>
+
+		<p>E-Posta Adresi <INPUT TYPE="text" NAME="mail"></p>
+
+		<p><input type="submit" value="Gönder">
+
+		<input type="reset" value="Temizle"></p>
+	    </h2>
+
+ 	    {% for message in get_flashed_messages() %}
+			
+	  	<div class="alert">  <h2>{{ message }}</h2>  </div>
+
+	    {% endfor %}
+ 	
+	</form>
+ </body>
+
+</html>  

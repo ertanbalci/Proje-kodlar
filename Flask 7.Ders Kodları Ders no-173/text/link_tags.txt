@@ -1,0 +1,5 @@
+Sayfa dýþý baðlantý (link) oluþturma
+<a href="www.google.com">Google</a> 
+<a href="main.html">Main Page</a> Hazýrladýðýmýz main page sayfasýný açar.
+<a href="notlar.pdf">notlar dosyasý için týklayýn</a> 
+<a href="mailto:ertanbalci@yahoo.com">E-posta göndermek için týklayýn</a>

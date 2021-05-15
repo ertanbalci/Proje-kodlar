@@ -1,0 +1,25 @@
+﻿<html>
+
+   <head> <title>Flash Mesaj2</title> </head>
+
+   <body> 
+
+   	<h2> PAGE2 </h2>
+
+	{% if get_flashed_messages() %}
+	
+		{% for message in get_flashed_messages() %}
+
+			<h2> {{ message }}</h2>
+
+		{% endfor %}
+	
+	{% else %}
+
+		<h2> <font color="red">Gösterecek Flash Mesajı Yok </font></h2>
+
+	{% endif %}
+
+    </body>
+
+</html>   
